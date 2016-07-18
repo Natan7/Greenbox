@@ -5,9 +5,7 @@
     <div class="well">
         <h1>@message</h1>
     </div>
-    
-    
-    <form name="Login" method="post" action="Login.jsp">
+  <form name="Login" method="POST" action="@routes.Application.login()">
         <div align="center">
             Usuario: <input type="text" name="nome" placeholder="Email Address">
         </div>
@@ -17,9 +15,18 @@
         </div>
 
         <div align="center">
-            <input type="submit" value="Login">
+            <button type="submit">Login</button>
         </div>
-
     </form>
+
+    <form name="Cadastrar" method="POST" action="@routes.Application.cadastro()">
+        <div align="center">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+
+
+    <p>O <strong>Green Box</strong> é um sistema de compartilhamento em nuvem que você poderá visualizar, modificar e até mesmo criar arquivos texto de modo que poderão ser acessados, em qualquer parte do mundo!  </p>
+
 
 }
